@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { user, createCollection } = useAuth();
   useEffect(() => {
     if (!user) {
       navigate("/login");
@@ -22,6 +22,7 @@ const Home = () => {
             <Link to="/room1">Frontend Freaks</Link>
           </div>
         </div>
+
         <div className="border border-gray-300 p-40 m-10">
           <div className="flex justify-center items-center">
             <Link to="/room2">Backend Freaks</Link>

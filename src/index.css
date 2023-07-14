@@ -12,6 +12,7 @@
   --textColorSecondary: rgb(226, 227, 232);
   --themeColorMain: rgba(219, 26, 90, 1);
   --themeColorSecondary: #386fd2;
+  --secondaryBgedColor: rgb(95, 93, 103);
 }
 
 * {
@@ -128,7 +129,8 @@ textarea {
 /* Room Styling */
 
 .room--container {
-  padding: 2em;
+  /* padding: 2em; */
+  padding: 0 6px;
   background-color: var(--secondaryBgColor);
   border-radius: 0 0 10px 10px;
   border: 1px solid var(--borderColor1);
@@ -169,7 +171,7 @@ textarea {
 .message--body {
   padding: 0.5em 0;
   color: var(--textColorSecondary);
-  /* background-color: var(--themeColorMain); */
+  background-color: var(--themeColorMain);
 
   padding: 1em;
   border-radius: 20px;
@@ -185,7 +187,7 @@ textarea {
   right: 0; */
   padding: 0.5em 0;
   color: var(--textColorSecondary);
-  background-color: var(--themeColorMain);
+  background-color: "red";
   padding: 1em;
   border-radius: 20px;
   width: fit-content;
